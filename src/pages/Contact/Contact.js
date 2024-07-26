@@ -75,6 +75,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='contact-right'>
+        {notification && <div className="notification">{notification}</div>}
           <form onSubmit={onSubmit}>
             <h1>Send Message</h1>
 
@@ -108,7 +109,7 @@ const Contact = () => {
 
             <button type="submit">Send</button>
           </form>
-          {notification && <div className="notification">{notification}</div>}
+          
         </div>
       </div>
     </div>
