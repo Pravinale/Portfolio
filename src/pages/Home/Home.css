@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://getwallpapers.com/wallpaper/full/0/f/e/1224072-free-download-plain-hd-wallpapers-1920x1080-for-windows.jpg');
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-position: center; /* Center the image in the viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background image in place */
+}
+
+.home-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    position: absolute;
+    top: 0;
+    padding: 0 10rem;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.heading h1{
+    color:#fda828;
+    cursor: pointer;
+}
+
+.face-component {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.home-content {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+
+.home-content ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+.home-content li {
+    position: absolute;
+    transform-origin: center;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+/* .home-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    display: inline-block;
+} */
+
+
+.home-content li:hover{
+    color: #ff9f0d;
+    transform: scale(1.2);
+}
+
+.home-content ul{
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/* Adjusting positions for five items */
+
+/* home */
+.home-content li:nth-child(1) { 
+    transform: rotate(270deg) translate(280px) rotate(-270deg);
+}
+
+/* about */
+.home-content li:nth-child(2) {
+    transform: rotate(-20deg) translate(300px) rotate(10deg);
+}
+
+/* my project */
+.home-content li:nth-child(3) {
+    transform: rotate(200deg) translate(280px) rotate(-190deg);
+}
+
+/* contact */
+.home-content li:nth-child(4) {
+    transform: rotate(140deg) translate(270px) rotate(-150deg);
+}
+
+/* services */
+.home-content li:nth-child(5) {
+    transform: rotate(40deg) translate(270px) rotate(-25deg);
+}
+
+
+
+/* src/pages/Home/Home.css */
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    height: 80%;
+    background: rgba(128, 128, 128, 0.3);
+    padding: 20px;
+    z-index: 3;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgb(158, 156, 156);
+  }
+
+.close-page h1{
+    color: rgb(255, 254, 254);
+    float: right;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+  
+
+.home-container.blurred {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+
+@media (max-width: 1050px) {
+
+    .heading h1{
+        text-align: center;
+    }
+
+    .home-content li {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+@media (max-width: 990px) {
+    .popup {
+        width:90%;
+      }
+    
+}
+
+
+@media (max-width: 750px) {
+
+    .popup {
+        width:95%;
+      }
+
+    .heading h1{
+        text-align: center;
+    }
+
+    .home-content li {
+        font-size: 1.5rem;
+    }
+
+/* home */
+.home-content li:nth-child(1) { 
+    transform: rotate(270deg) translate(200px) rotate(-270deg);
+}
+
+/* about */
+.home-content li:nth-child(2) {
+    transform: rotate(-20deg) translate(210px) rotate(10deg);
+}
+
+/* my project */
+.home-content li:nth-child(3) {
+    transform: rotate(200deg) translate(200px) rotate(-190deg);
+}
+
+/* contact */
+.home-content li:nth-child(4) {
+    transform: rotate(140deg) translate(190px) rotate(-150deg);
+}
+
+/* services */
+.home-content li:nth-child(5) {
+    transform: rotate(40deg) translate(190px) rotate(-25deg);
+}
+
+}
+
+
+@media (max-width: 550px) {
+    .popup {
+        width:98%;
+      }
+    
+}
+
+
+
+@media (max-width: 490px) {
+
+    .heading{
+        padding: 0;
+    }
+    
+
+    .home-content li {
+        font-size: 1.1rem;
+    }
+
+/* home */
+.home-content li:nth-child(1) { 
+    transform: rotate(270deg) translate(120px) rotate(-270deg);
+}
+
+/* about */
+.home-content li:nth-child(2) {
+    transform: rotate(-20deg) translate(130px) rotate(10deg);
+}
+
+/* my project */
+.home-content li:nth-child(3) {
+    transform: rotate(200deg) translate(120px) rotate(-190deg);
+}
+
+/* contact */
+.home-content li:nth-child(4) {
+    transform: rotate(140deg) translate(110px) rotate(-150deg);
+}
+
+/* services */
+.home-content li:nth-child(5) {
+    transform: rotate(40deg) translate(110px) rotate(-25deg);
+}
+
+}
+
+
+@media (max-width: 320px) {
+
+
+    .home-content li {
+        font-size: 1rem;
+    }
+
+/* home */
+.home-content li:nth-child(1) { 
+    transform: rotate(270deg) translate(100px) rotate(-270deg);
+}
+
+/* about */
+.home-content li:nth-child(2) {
+    transform: rotate(-20deg) translate(100px) rotate(10deg);
+}
+
+/* my project */
+.home-content li:nth-child(3) {
+    transform: rotate(200deg) translate(100px) rotate(-190deg);
+}
+
+/* contact */
+.home-content li:nth-child(4) {
+    transform: rotate(140deg) translate(90px) rotate(-150deg);
+}
+
+/* services */
+.home-content li:nth-child(5) {
+    transform: rotate(40deg) translate(90px) rotate(-25deg);
+}
+
+}
+

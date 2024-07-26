@@ -1,0 +1,135 @@
+.project-container{
+    width: 100%;
+    height: 30rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;  
+}
+
+.projects{
+    width: 100%;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+
+
+.my-project h1{
+    color:#fda828;
+}
+
+.project-card{
+    border-radius: 10px;
+    border: 2px solid;
+    width: 13rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card img{
+    border-radius: 10px;
+    width: 100%;
+    height: 8rem;
+}
+
+.project-content{
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.project-content h1{
+    font-size: 1.5rem;
+    color:#fda828;
+}
+
+.project-content p{
+    font-size: 1rem;
+}
+
+.project-content a{
+    color:#fda828;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.project-content a:hover{
+    color: white;
+}
+
+
+@media (max-width: 1270px) {
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (max-width: 990px) {
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card{
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .project-content h1{
+        font-size: 1.2rem;
+    }
+    
+    .project-content p{
+        font-size: 0.6rem;
+    }
+    
+    .project-content a{
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 2px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 380px) {
+    .projects{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
+    }
+    .my-project h1{
+        text-align: center;
+    }
+
+}

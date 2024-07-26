@@ -1,0 +1,201 @@
+.face-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+}
+
+.face {
+    position: relative;
+    padding-top: 3rem;
+    gap: 2rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(250, 214, 9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
+                inset 10px 10px 15px rgba(255, 255, 255, 0.7),
+                0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.smile{
+    position: absolute;
+    top: 170px;
+    width: 120px;
+    height: 50px;
+    background-color: orange;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    /* box-shadow: 0px 0px 5px 3px rgb(211, 180, 3); */
+    box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
+    inset 0px 11px 15px rgba(255, 255, 255, 0.7),
+    0px 0px 5px 3px rgb(211, 180, 3);
+    transition: all 0.3s ease;
+}
+
+.face:hover .smile{
+    top: 170px;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
+    inset 0px -11px 15px rgba(255, 255, 255, 0.7),
+    0px 0px 2px 1px rgb(211, 180, 3);
+}
+
+.eyes {
+    position: relative;
+    top: -70px;
+    display: flex;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-color: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
+                inset 10px 10px 15px rgba(255, 255, 255, 0.7),
+                0px 0px 5px 3px rgb(211, 180, 3);
+}
+
+.eyes .eye::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.face-shadow {
+    width: 150px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(36, 35, 35);
+    box-shadow: 0px 0px 13px 10px rgb(36, 35, 35);
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .face {
+        width: 150px;
+        height: 150px;
+    }
+
+    .eyes {
+        top: -40px;
+    } 
+
+    /* eye */
+    .eyes .eye {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* eyeball */
+    .eyes .eye::before {
+        width: 25px;
+        height: 25px;
+
+    }
+    
+    .smile{
+        top: 110px;
+        width: 70px;
+        height: 30px;
+    }
+}
+
+
+
+@media (max-width: 490px) {
+    .face {
+        width: 100px;
+        height: 100px;
+    }
+
+    .eyes {
+        top: -40px;
+    } 
+
+    /* eye */
+    .eyes .eye {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* eyeball */
+    .eyes .eye::before {
+        width: 15px;
+        height: 15px;
+
+    }
+    
+    .smile{
+        top: 70px;
+        width: 40px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .face {
+        width: 80px;
+        height: 80px;
+    }
+
+    .eyes {
+        top: -30px;
+    } 
+
+    /* eye */
+    .eyes .eye {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* eyeball */
+    .eyes .eye::before {
+        width: 13px;
+        height: 13px;
+
+    }
+    
+    .smile{
+        top: 55px;
+        width: 30px;
+        height: 10px;
+    }
+}
