@@ -56,13 +56,13 @@
 
 .face:hover .smile{
     top: 170px;
-    width:60px;
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: orange;
     box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
-    inset 0px -11px 15px rgba(255, 255, 255, 0.7),
-    0px 0px 2px 1px rgb(211, 180, 3);
+                inset 0px -11px 15px rgba(255, 255, 255, 0.7),
+                0px 0px 2px 1px rgb(211, 180, 3);
 }
 
 .eyes {
@@ -125,25 +125,40 @@
     }
 
     /* eyeball */
-    .eyes .eye::before {
+    /* .eyes .eye::before {
         width: 25px;
         height: 25px;
 
+    } */
+
+    .eyes .eye::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: black;
     }
     
     .smile{
         top: 110px;
         width: 70px;
         height: 30px;
+        position: fixed;
     }
 
-    .face:hover .smile {
-        top: initial; 
-        width: initial;
-        height: initial;
-        border-radius: initial;
-        background-color: initial; 
-        box-shadow: none;
+    .face:hover .smile{
+        top: 110px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: orange;
+        box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
+                    inset 0px -11px 15px rgba(255, 255, 255, 0.7),
+                    0px 0px 2px 1px rgb(211, 180, 3);
     }
     
 }
@@ -167,10 +182,22 @@
     }
 
     /* eyeball */
-    .eyes .eye::before {
+    /* .eyes .eye::before {
         width: 15px;
         height: 15px;
 
+    } */
+
+    .eyes .eye::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(-50%, -50%);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: black;
     }
     
     .smile{
@@ -178,12 +205,20 @@
         width: 40px;
         height: 15px;
     }
+
+    .face:hover .smile{
+        top: 70px;
+        width: 20px;
+        height: 20px;
+    }
+    
 }
 
 @media (max-width: 320px) {
     .face {
         width: 80px;
         height: 80px;
+        position: fixed;
     }
 
     .eyes {
@@ -198,14 +233,26 @@
 
     /* eyeball */
     .eyes .eye::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(-50%, -50%);
         width: 13px;
         height: 13px;
-
+        border-radius: 50%;
+        background-color: black;
     }
     
     .smile{
         top: 55px;
         width: 30px;
         height: 10px;
+    }
+
+    .face:hover .smile{
+        top: 60px;
+        width: 15px;
+        height: 15px;
     }
 }
