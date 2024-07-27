@@ -147,9 +147,17 @@ button:hover{
         text-align: center;
     }
 
-    .image img{
-            display: none;
-    }
+    .about-me {
+        order: 2; /* Display this section second */
+        text-align: center;
+      }
+      
+      .image {
+        order: 1; /* Display this section first */
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+
     .skill-img img{
         height: 2rem;
         width: 2rem; 

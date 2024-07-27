@@ -136,6 +136,16 @@
         width: 70px;
         height: 30px;
     }
+
+    .face:hover .smile {
+        top: initial; 
+        width: initial;
+        height: initial;
+        border-radius: initial;
+        background-color: initial; 
+        box-shadow: none;
+    }
+    
 }
 
 
