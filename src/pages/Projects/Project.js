@@ -18,7 +18,7 @@ const Project = () => {
                 <h1>PG Store</h1>
                 <p>Ecommerce Website (frontend only) HTML, CSS, Reactjs
                 </p>
-                <a href='https://pravinale.github.io/Ecommerce/'>View Project</a>
+                <a href="https://pravinale.github.io/Ecommerce/" target="_blank">View Project</a>
               </div>
             </div>
             <div className='project-card'>

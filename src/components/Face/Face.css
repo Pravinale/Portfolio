@@ -47,7 +47,6 @@
     background-color: orange;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
-    /* box-shadow: 0px 0px 5px 3px rgb(211, 180, 3); */
     box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.1),
     inset 0px 11px 15px rgba(255, 255, 255, 0.7),
     0px 0px 5px 3px rgb(211, 180, 3);
@@ -125,12 +124,6 @@
     }
 
     /* eyeball */
-    /* .eyes .eye::before {
-        width: 25px;
-        height: 25px;
-
-    } */
-
     .eyes .eye::before {
         content: '';
         position: absolute;
@@ -182,12 +175,6 @@
     }
 
     /* eyeball */
-    /* .eyes .eye::before {
-        width: 15px;
-        height: 15px;
-
-    } */
-
     .eyes .eye::before {
         content: '';
         position: absolute;
@@ -255,4 +242,4 @@
         width: 15px;
         height: 15px;
     }
-}
+} 
