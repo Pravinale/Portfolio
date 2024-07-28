@@ -26,7 +26,7 @@ const Project = () => {
               <div className='project-content'>
                 <h1>PG Restro</h1>
                 <p>Restaurant Website (frontend only) HTML, CSS, Reactjs</p>
-                <a href='https://pravinale.github.io/Restaurant/' target="_blank">View Project</a>
+                <a href="https://pravinale.github.io/Restaurant/" target="_blank">View Project</a>
               </div>
             </div>
           </div>
