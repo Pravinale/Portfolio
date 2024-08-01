@@ -29,6 +29,14 @@ const Project = () => {
                 <a href="https://pravinale.github.io/Restaurant/" target="_blank">View Project</a>
               </div>
             </div>
+            <div className='project-card'>
+              <img src={pgrestro}/>
+              <div className='project-content'>
+                <h1>Code Editor</h1>
+                <p></p>
+                <a href="https://pravinale.github.io/CodeEditor/" target="_blank">View Project</a>
+              </div>
+            </div>
           </div>
         </div>
     </>
