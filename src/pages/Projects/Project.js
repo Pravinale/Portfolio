@@ -2,6 +2,7 @@ import React from 'react'
 import './Project.css'
 import pgrestro from '../../assets/pgrestro.png'
 import pgstore from '../../assets/pgstore.png'
+import CodeEditor from '../../assets/CodeEditor.png'
 
 const Project = () => {
   return (
@@ -30,7 +31,7 @@ const Project = () => {
               </div>
             </div>
             <div className='project-card'>
-              <img src={pgrestro}/>
+              <img src={CodeEditor}/>
               <div className='project-content'>
                 <h1>Code Editor</h1>
                 <p></p>
