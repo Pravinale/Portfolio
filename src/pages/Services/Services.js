@@ -26,11 +26,11 @@ const Services = () => {
           <p>Ensuring websites are optimized for all devices and screen sizes.</p>
         </div>
 
-        <div className='services'>
+        {/* <div className='services'>
           <span><FaSearch/></span>
           <h2>SEO Optimization</h2>
           <p>Improving website visibility and search engine rankings.</p>
-        </div>
+        </div> */}
 
       </div>
     </div>
