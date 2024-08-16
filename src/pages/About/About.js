@@ -5,7 +5,7 @@ import html from '../../assets/html.png'
 import css from '../../assets/css.png'
 import js from '../../assets/js.png'
 import react from '../../assets/react.png'
-import cv from '../../CV/TestCV.pdf'
+import cv from '../../CV/CV.pdf'
 
 const About = () => {
   return (
