@@ -2,6 +2,7 @@ import React from 'react'
 import './Project.css'
 import pgrestro from '../../assets/pgrestro.png'
 import pgstore from '../../assets/pgstore.png'
+import pgwears from '../../assets/pgwears.png'
 import CodeEditor from '../../assets/CodeEditor.png'
 
 const Project = () => {
@@ -13,6 +14,14 @@ const Project = () => {
           </div>
 
           <div className='projects'>
+            <div className='project-card'>
+              <img src={pgwears}/>
+              <div className='project-content'>
+                <h1>PG Wears</h1>
+                <p></p>
+                <a href="https://pantonefrontend.onrender.com/" target="_blank">View Project</a>
+              </div>
+            </div>
             <div className='project-card'>
               <img src={pgstore}/>
               <div className='project-content'>
